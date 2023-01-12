@@ -19,12 +19,18 @@ def Groups(name):
         return users["None"]
 
 # Returns the groups a the user is part of
-def Contents(groups):
+def Contents(user_groups):
     contents = [
-        ["Website", ("everyone"), "https://frolov.eu", False],
+        ["Website", "https://frolov.eu", ("everyone"), False],
     ]
-    for item in contents:
-        for group in item[1]:
-            a = 1
+    allowed_content = list()
+    for content in contents:
+        for group in content[1]:
+            for user_group in user_groups:
+                if group == user_group:
+                    allowed_content.append(content)
+                    break
+
+
 
 
