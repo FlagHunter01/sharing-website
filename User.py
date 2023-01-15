@@ -1,7 +1,10 @@
 # Returns the groups assigned to a name
 def Groups(name):
     users = {
-        "None": ("everyone"),
+        "None": ["everyone"],
     }
     key = f'{name}' if name else "None"
-    return users[key]
+    if key in users:
+        return users[key]
+    else:
+        return users["None"]
