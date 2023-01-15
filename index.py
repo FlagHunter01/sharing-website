@@ -13,9 +13,10 @@ username = os.environ.get('REMOTE_USER')
 
 user_groups = User.Groups(username)
 content = Content.List(user_groups)
-for item in content:
-    print(item[0])
 
 print("Content-type: text/html\n\n")
-with open(file) as file:
-    print(file.read())
+#with open(file) as file:
+#    print(file.read())
+for item in content:
+    print(item[0] + '''<br>''')
+
