@@ -9,7 +9,7 @@ def ContentIsAllowed(content, user_groups):
 # Returns the groups a the user is part of
 def List(user_groups):
     contents = [
-        ["Website", "https://frolov.eu", ["everyone"], False],
+        ["Website", "https://frolov.eu", ["everyone"], False, "link.png"],
     ]
     allowed_content = list()
     for content in contents:
