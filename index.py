@@ -3,6 +3,7 @@
 import os
 import User
 import Content
+import Print
 
 ### Variables ###
 
@@ -15,8 +16,4 @@ user_groups = User.Groups(username)
 content = Content.List(user_groups)
 
 print("Content-type: text/html\n\n")
-#with open(file) as file:
-#    print(file.read())
-for item in content:
-    print(item[0] + '''<br>''')
-
+Print.Content(content)
