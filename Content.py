@@ -6,13 +6,20 @@ def ContentIsAllowed(content, user_groups):
                 return True
     return False
 
+def ReturnWeight(element):
+    return element[4]
+
+def SortContent(content):
+    return sorted(content, key = ReturnWeight, reverse = True)
+
 # Returns the groups a the user is part of
 def List(user_groups):
     contents = [
-        ["Website", "https://frolov.eu", ["everyone"], False, "link.png"],
+        ["Website", "https://frolov.eu", ["everyone"], "link.png", 1],
+        ["This is first", "first", ["everyone"], "first.png", 2],
     ]
     allowed_content = list()
     for content in contents:
         if ContentIsAllowed(content[2], user_groups):
             allowed_content.append(content)
-    return allowed_content
+    return SortContent(allowed_content)

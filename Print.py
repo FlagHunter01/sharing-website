@@ -19,7 +19,7 @@ def Content(content):
     for item in content:
         print('''
         <div class="card">
-            <div class="card_image" style="background-image=' ''' + item[4] + ''' '"></div>
+            <div class="card_image" style="background-image=' ''' + item[3] + ''' '"></div>
             <div class="card_footer">
                 <a class="card_link" href="''' + item[1] + '''">''' + item[0] + '''</a>
             </div>
