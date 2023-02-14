@@ -1,4 +1,4 @@
-# Tells if content is allowed based on user's groups
+# Returns true if the content's groups overlap with the users group, false otherwise
 def ContentIsAllowed(content, user_groups):
     for group in content:
         for user_group in user_groups:
@@ -6,13 +6,15 @@ def ContentIsAllowed(content, user_groups):
                 return True
     return False
 
+# Returns the weight property of a given content entity
 def ReturnWeight(element):
     return element[4]
 
+# Sorts content by decreasing weight
 def SortContent(content):
     return sorted(content, key = ReturnWeight, reverse = True)
 
-# Returns the groups a the user is part of
+# Returns contents to be displayed to the user, sorted by decreasing weight
 def List(user_groups):
     contents = [
         ["Website", "https://frolov.eu", ["everyone"], "link.png", 1],

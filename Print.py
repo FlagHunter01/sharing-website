@@ -1,3 +1,4 @@
+# Prints the HTML with the authorized contentx
 def Content(content):
     print('''
     <!DOCTYPE html>
