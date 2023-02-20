@@ -15,6 +15,7 @@ def SortContent(content):
     return sorted(content, key = ReturnWeight, reverse = True)
 
 # Returns contents to be displayed to the user, sorted by decreasing weight
+# [Name, URL, [groups], Image, Weight],
 def List(user_groups):
     contents = [
         ["Website", "https://frolov.eu", ["everyone"], "link.png", 1],
