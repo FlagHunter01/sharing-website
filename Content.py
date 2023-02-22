@@ -18,7 +18,7 @@ def SortContent(content):
 # [Name, URL, [groups], Image, Weight],
 def List(user_groups):
     contents = [
-        ["Website", "https://frolov.eu", ["everyone"], "link.png", 1],
+        ["Website", "https://frolov.eu", ["everyone"], "link.png", 10],
         ["This is first", "first", ["everyone"], "first.png", 2],
     ]
     allowed_content = list()
