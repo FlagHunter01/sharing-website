@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+# Sharing page
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+[Visit as guest](https://None:everyone@frolov.eu/sharing/){ .md-button .md-button--primary }
+[Visit the project](https://frolov.eu/sharing/){ .md-button}
+[Read the code](https://github.com/FlagHunter01/sharing-website){ .md-button}
 
-## Commands
+The aim of this project is to create a web interface that shows filtered content based on the used login.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+For example, you may want to show pictures of your dog to one group of people and photos of your last trip to another group.
 
-## Project layout
+This small Python script lets you add people to groups and define which group has access to each ressource.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+For my needs, it was easier to hardcode user information into the script so the project isn't suited for large audiences.
