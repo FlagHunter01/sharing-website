@@ -139,16 +139,6 @@ extra:
   # Main logo link URL. site_url by default
   #homepage: site_url
 
-
-  # Multiple languages support
-  #alternate:
-  #   - name: English
-  #     link: /en/
-  #     lang: en
-  #   - name: Français
-  #     link: /fr/
-  #     lang: fr
-
 markdown_extensions:
   # Support for admonitions
   - admonition
