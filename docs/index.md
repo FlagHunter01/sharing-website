@@ -1,8 +1,9 @@
-# Sharing page
+---
+title: Sharing page
+description: Introduction to the project
+---
 
-[Visit as guest](https://None:everyone@frolov.eu/sharing/){ .md-button .md-button--primary }
-[Visit the project](https://frolov.eu/sharing/){ .md-button}
-[Read the code](https://github.com/FlagHunter01/sharing-website){ .md-button}
+[Read the code](https://github.com/FlagHunter01/sharing-website){ .md-button .md-button--primary }
 
 The aim of this project is to create a web interface that shows filtered content based on the used login.
 

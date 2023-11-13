@@ -26,10 +26,10 @@ theme:
   # 1 per project (HTML5 limitation)
   language: en
 
-  logo: assets/logo.png
-  #icon:
-  #  logo: fontawesome/solid/rocket
-  favicon: assets/logo.png
+  #logo: assets/logo.png
+  icon:
+    logo: material/share-variant
+  #favicon: assets/logo.png
 
   palette:
     # Palette toggle for automatic mode
@@ -172,10 +172,6 @@ markdown_extensions:
   - pymdownx.tilde
   # make admonitions colabseable
   - pymdownx.details
-  # Emoji support
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
   # Highlight code blocks
   - pymdownx.highlight:
       anchor_linenums: true

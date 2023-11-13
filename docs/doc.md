@@ -1,3 +1,20 @@
+---
+title: Documentation
+description: Documentation of the configuration process
+---
+
+## Script configuration
+
+- Copy all the files to `/var/www/html/sharing` for example. 
+- Make all the `*.py` files executable by Apache.
+- Open `Management.py`, this file is used to configure everything. 
+
+This file is divided in two parts. 
+
+!!! warning "This page is not finished yet."
+
+<hr>
+
 ## How it works
 
 The page the user sees is the output of a Python script.
@@ -30,8 +47,6 @@ Make all the `*.py` files executeable by Apache.
      - Content associated with the "everyone" group is seen by all users regardless of their appartenance
      - "None" is used when a user isn't authenticated. He has access to the "everyone" group
      - "admin" has access to all content.
-
-Everything is managed via 
 
 ### Apache configuration
 
