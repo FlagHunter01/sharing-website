@@ -13,4 +13,3 @@ This small Python script lets you add people to groups and define which group ha
 
 For my needs, it was easier to hardcode user information into the script so the project isn't suited for large audiences.
 
-## TEST 
