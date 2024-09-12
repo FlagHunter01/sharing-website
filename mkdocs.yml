@@ -53,7 +53,7 @@ theme:
   # Logo / icons TODO: custimize
   #logo: assets/logo.png
   icon:
-    logo: material/share-variant
+    logo: material/share
   #favicon: images/favicon.png
   features:
     # Monopage (?)
