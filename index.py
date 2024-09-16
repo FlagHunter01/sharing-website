@@ -1,9 +1,13 @@
 #!/usr/bin/python3.9
+# Test
+
+### Imports ###
 
 import os
-import User
-import Content
-import Print
+from Groups import *
+from Content import *
+from Print import *
+from Management import *
 
 ### Variables ###
 
@@ -12,8 +16,4 @@ username = os.environ.get('REMOTE_USER')
 
 ### Body ###
 
-user_groups = User.Groups(username)
-content = Content.List(user_groups)
-
-print("Content-type: text/html\n\n")
-Print.Content(content)
+Print(Content(contents, Groups(users, username)))

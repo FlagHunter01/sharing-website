@@ -44,7 +44,7 @@ body {
 }
 
 .card {
-    width: 500px;
+    width: 250px;
     max-width: 90%;
     float: left;
     margin: 30px;
@@ -55,8 +55,9 @@ body {
 
 .card_image {
     width: 100%;
-    height: 500px;
+    height: 250px;
     background-image: url("link.png");
+    background-size: contain;
     border-radius: 5px 5px 0 0;
 }
 
